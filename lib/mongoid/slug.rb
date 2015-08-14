@@ -1,5 +1,6 @@
 require 'mongoid'
 require 'stringex'
+require 'mongoid/scopable'
 require 'mongoid/slug/criteria'
 require 'mongoid/slug/index'
 require 'mongoid/slug/paranoia'
