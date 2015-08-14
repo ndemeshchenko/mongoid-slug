@@ -1,3 +1,4 @@
+require 'pry'
 require 'mongoid'
 require 'stringex'
 require 'mongoid/scopable'
@@ -136,6 +137,7 @@ module Mongoid
       end
 
       def queryable
+        binding.pry
         scope_stack.last || Criteria.new(self) # Use Mongoid::Slug::Criteria for slugged documents.
       end
 
